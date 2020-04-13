@@ -1,0 +1,55 @@
+#invoice.new {
+  float: left;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body {padding:0;}
+#invoice {border: none;}
+.invoice-logo {margin-left: 20px;}
+#header2 {margin:0 5px;}
+.invoice-from {padding-left: 20px;}
+.invoice-contact {margin-right: 0px;}
+.this-is-invoice {padding-right: 20px;}
+#info-to {padding: 10px 0 0 0; height: 100px;}
+.invoice-financials {margin: 0 20px;}
+.info .thankyou {margin-top: 20px;}
+.invoice-items tbody th {padding-top:5px; padding-bottom:5px;}
+#footer {margin: 10px 5px 0 5px; background-size: 80px 20px; background-position: 5px 2px; height: 40px;}
+#footer .footer-address {padding: 5px 0 0 80px;}
+#footer .footer-phone {padding: 5px 0 0 5px;}
+#footer .footer-mail {padding: 5px 0 0 5px;}
+#footer .footer-qr {background-size: 70px 70px;}
+.invoice-signature {margin-top: 20px; margin-bottom: 20px;}
+#footer2 {margin: 5px 10px;}
+
+#invoice,
+.invoice-logo,
+#header2,
+.invoice-contact,
+.invoice-to .to-org, 
+.invoice-to .to-phone, 
+.invoice-to a.to-web, 
+.invoice-meta .invoice-number, 
+.invoice-meta .invoice-date,
+.invoice-meta .invoice-due,
+.info .thankyou, 
+.info .info-time,
+.info .info-payment, 
+.info .info-terms,  
+#footer, 
+.invoice-totals tbody td.col-2, 
+.invoice-totals tbody th.col-1,
+.invoice-totals thead th, 
+.invoice-items thead th {
+	visibility:visible;
+	-webkit-print-color-adjust: exact;
+}
+#footer .footer-phone {
+	margin-left:30px;}
+.invoice-paynow {
+  display: none;
+}
+#invoice {
+    max-width: 750px;
+}
