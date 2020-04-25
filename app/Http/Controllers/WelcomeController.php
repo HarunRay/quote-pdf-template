@@ -16,13 +16,13 @@ class WelcomeController extends Controller
 //            'isRemoteEnabled'      => true,
 //            'dpi'                  => 300
 //            'debugKeepTemp'        => true
-        ] )->loadView( 'pdf.invoice1', [
+        ] )->loadView( 'pdf.invoice', [
 
             'type'            => 'invoice',
             'title'           => 'Invoice',
             'invoice_heading' => 'Tax Invoice',// NEW field
-            'logo_url'        => public_path( 'pdf-templates/invoice1/img/logo.jpg' ),
-            'template'        => '/pdf-templates/invoice1',// NEW field
+            'logo_url'        => public_path( 'pdf-templates/invoice/logo.png' ),
+            'template'        => '/pdf-templates/invoice',// NEW field
             'color'           => '#ccc',
 
             'id'   => '324456',
@@ -112,6 +112,11 @@ class WelcomeController extends Controller
                 accelerator in order to fill any larger voids and stabilise anything that could be behind the substrate.<br /><br />
                 Next we make a mixture with less accelerator to create a thicker more solid foam',
                 ],
+                'heading_1'             => 'Company Name Ltd',
+                'heading_2'             => '123 Streetname St',
+                'heading_3'             => 'Suburb STATE 1200',
+                'heading_4'             => 'P. 012235346547',
+                'purchase_order_number' => 'RAND123534765867', // If $type is invoice and purchase order exists
             ],
 
         ] );
